@@ -3,9 +3,9 @@ function calcularPerimetro() {
     var outPerimetro = document.getElementById("outPerimetro")
 
     var raio = parseFloat(inRaio.value);
-    var total = 2* 3.14 * raio
+    var total = 2* Math.PI * raio
 
-    outPerimetro.textContent = "O Perímetro do raio "+ raio +"cm é: " + total +"cm"
+    outPerimetro.textContent = "O Perímetro do raio "+ raio +"cm é: " + total.toFixed(4) +"cm"
 
 
 }
